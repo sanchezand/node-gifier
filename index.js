@@ -20,6 +20,15 @@ class GIF extends EventEmitter {
       return randStr;
    }
 
+   /**
+    * Create a new gif from a source video.
+    * @param {String} video Source video for the new gif.
+    * @param {String} destination Destination of the new gif.
+    * @param {Object} options Options
+    * @param {Integer} options.frames The number of frames the gif will get from the source video.
+    * @param {String} options.size The size of the new gif. IE: '480x?' '?' will follow the source video ratio.
+    * @param {Integer} options.delay The delay between each frame in the new gif.
+    */
    constructor(video, destination, options){
       if(!options)options = defaultOptions;
       super();
@@ -39,7 +48,7 @@ class GIF extends EventEmitter {
                newGif.in(path.join(tempFolder, i));
             }
          }
-         newGif.delay(options.delay).write(destination, (err)=>{
+         newGif.delay(options.delay/10).write(destination, (err)=>{
             for(var i of gifFrames){
                fs.removeSync(path.join(i));
             }

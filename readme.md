@@ -26,3 +26,12 @@ newGif.on('end', ()=>{
 ```
 
 ## Algorithm
+```
+=> Create temporary folder in destination location.
+=> Get the source video and create frames.
+   -> Frames are evenly distributed depending on the count.
+   -> IE: 4 frames will create frames in 25%, 50%, 75%, 100%
+=> Create frames and store them in the temp folder.
+=> Create GIF from frames to the destination.
+=> Delete frames and temp folder.
+```
