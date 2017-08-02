@@ -1,11 +1,13 @@
 # GIFIER
-Create a gif from a video.
+Create a gif from a video.  
 (Its more like a gif slideshow)
 
 ## Installation
 ```bash
 npm install gifier
-```
+``` 
+=> REQUIRES [Ffmpeg](https://www.ffmpeg.org/download.html)  
+=> REQUIRES [GraphicsMagic](http://www.graphicsmagick.org/) 
 
 ## Getting started
 ```javascript

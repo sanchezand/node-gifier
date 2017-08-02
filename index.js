@@ -55,8 +55,6 @@ class GIF extends EventEmitter {
             fs.rmdirSync(tempFolder);
             this.emit('end', {});
          })
-      }).on('progress', (prog)=>{
-         console.log(prog);
       })
       return this;
    }
