@@ -1,5 +1,6 @@
 # GIFIER
 Create a gif from a video.
+(Its more like a gif slideshow)
 
 ## Installation
 ```bash
