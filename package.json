@@ -24,8 +24,7 @@
   },
   "homepage": "https://github.com/sanchezand/node-gifier#readme",
   "dependencies": {
-    "fluent-ffmpeg": "^2.1.2",
-    "fs-extra": "^4.0.1",
-    "gm": "^1.23.0"
+    "gm": "^1.23.0",
+    "rimraf": "^3.0.0"
   }
 }
